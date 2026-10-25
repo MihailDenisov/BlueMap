@@ -5,14 +5,10 @@ plugins {
     alias ( libs.plugins.neoforge.gradle )
 }
 
-val supportedMinecraftVersions = listOf(
-    "26.1", "26.1.1", "26.1.2",
-    "26.2",
-    "26.3"
-)
+val supportedMinecraftVersions = listOf("1.21.1")
 
 val minecraftVersion = supportedMinecraftVersions.first()
-val neoVersion = "26.1.0.0-alpha.15+pre-3"
+val neoVersion = "21.1.262"
 
 val shadowInclude: Configuration = configurations.create("shadowInclude")
 configurations.api.get().extendsFrom(shadowInclude)
