@@ -22,13 +22,8 @@ includeBuild("api")
 include(":core")
 include(":common")
 
-implementation("cli")
-implementation("fabric")
-implementation("forge")
+// Backport target: Minecraft 1.21.1 / NeoForge 21.1.262
 implementation("neoforge")
-implementation("paper")
-implementation("spigot")
-implementation("sponge")
 
 fun implementation(name: String) {
     val project = ":$name"
